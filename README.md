@@ -1,0 +1,1 @@
+# Mirzakhani SQL Database exercises
