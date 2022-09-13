@@ -403,7 +403,6 @@ LIMIT 1;
 SELECT d.dept_name, ROUND(AVG(s.salary),0) AS avg_dept_salary
 FROM departments d
 JOIN dept_emp de ON d.dept_no = de.dept_no
-JOIN employees e ON e.emp_no = de.emp_no
 JOIN salaries s ON e.emp_no = s.emp_no
 GROUP BY d.dept_name
 ORDER BY avg_dept_salary DESC;
